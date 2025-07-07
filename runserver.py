@@ -1,9 +1,9 @@
 """
-This script runs the Routes_and_URLs application using a development server.
+This script runs the Templates_and_HTML_Files application using a development server.
 """
 
 from os import environ
-from Routes_and_URLs import app
+from Templates_and_HTML_Files import app
 
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')

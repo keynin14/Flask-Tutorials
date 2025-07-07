@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Index Page{% endblock %}
+
+{% block content %}
+
+
+<h1>HELLO WORLD</h1>
+<ul>
+    {% for item in mylist %}
+        {%if item == 30 %}
+            <li style="color: red"> {{ item }}</li>
+        {% else %}
+            <li>{{ item }}</li>
+        {% endif %}
+
+        Hello
+    {% endfor %}
+</ul>
+<p>{{ myvalue }}</p>
+<p>{{ mycalc }}</p>
+<p>{{ mylist }}</p>
+
+<a href= "{{ url_for('other') }}">Other</a>   
+
+{% endblock %}
