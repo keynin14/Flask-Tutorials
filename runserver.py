@@ -1,9 +1,9 @@
 """
-This script runs the Forms_POST_Requests_File_Handling application using a development server.
+This script runs the Sessions_Cookies application using a development server.
 """
 
 from os import environ
-from Forms_POST_Requests_File_Handling import app
+from Sessions_Cookies import app
 
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')
