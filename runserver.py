@@ -1,9 +1,9 @@
 """
-This script runs the Sessions_Cookies application using a development server.
+This script runs the Databases___SQLAlchemy application using a development server.
 """
 
 from os import environ
-from Sessions_Cookies import app
+from Databases___SQLAlchemy import app
 
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')

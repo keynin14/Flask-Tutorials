@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+
+{% block content %}
+
+<h1>Index Page</h1>
+
+<ul>
+    {% for person in people %}
+    <li>{{ person }} <button onclick="deletePerson({{ person.pid }})">Delete</button></li>
+    {% endfor %}
+</ul> url_for}}
+
+<h3>New Person</h3>
+<form action="{{ url_for('index') }}" method="post">
+    <input type="text" name="name" placeholder="Name" required="required"/><br>
+    <input type="number" name="age" placeholder="Age"/><br>
+    <input type="text" name="job" placeholder="Job"/><br>
+    <input type="submit" name="name" value="Create"/>
+
+
+</form>
+
+<script>
+    function deletePerson(pid) {
+        if (confirm("Are you sure you want to delete this person?")) {
+            window.location.href = "{{ url_for('delete_person', pid='') }}" + pid;
+        }
+    }
+
+{% endblock %}
