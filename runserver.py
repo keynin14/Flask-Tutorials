@@ -1,9 +1,9 @@
 """
-This script runs the Databases___SQLAlchemy application using a development server.
+This script runs the Blueprints application using a development server.
 """
 
 from os import environ
-from Databases___SQLAlchemy import app
+from Blueprints import app
 
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')
