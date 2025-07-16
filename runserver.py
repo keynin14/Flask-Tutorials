@@ -1,9 +1,9 @@
 """
-This script runs the Blueprints application using a development server.
+This script runs the Deployment_and_Docker application using a development server.
 """
 
 from os import environ
-from Blueprints import app
+from Deployment_and_Docker import app
 
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')
